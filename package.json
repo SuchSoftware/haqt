@@ -18,6 +18,7 @@
   "keywords": [
     "haqt"
   ],
+  "repository": "https://github.com/SuchSoftware/haqt",
   "author": "Ethan Garofolo <ethan@suchsoftware.com>",
   "license": "ISC",
   "devDependencies": {
