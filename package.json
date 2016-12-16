@@ -1,0 +1,39 @@
+{
+  "name": "haqt",
+  "version": "0.0.0",
+  "description": "A toolkit for building apps with the HAQT pattern",
+  "main": "lib/index.js",
+  "scripts": {
+    "clean": "rimraf coverage dist lib",
+    "compile": "babel --presets es2015 -d lib/ src/",
+    "lint": "eslint src test",
+    "postrelease": "npm publish",
+    "prerelease": "npm run clean && npm run check",
+    "release": "npm run compile",
+    "release:patch": "npm version patch && npm run release",
+    "release:minor": "npm version minor && npm run release",
+    "release:major": "npm version major && npm run release",
+    "test": "NODE_ENV=test blue-tape -r babel-register 'test/**/*ests.js'"
+  },
+  "keywords": [
+    "haqt"
+  ],
+  "author": "Ethan Garofolo <ethan@suchsoftware.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.20.0",
+    "babel-eslint": "^7.1.1",
+    "babel-plugin-transform-object-rest-spread": "^6.20.2",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-register": "^6.18.0",
+    "blue-tape": "^1.0.0",
+    "eslint": "^3.12.2",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-config-suchsoftware": "^1.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.8.0",
+    "rimraf": "^2.5.4"
+  }
+}
