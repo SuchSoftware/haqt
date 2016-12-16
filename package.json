@@ -34,6 +34,12 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-react": "^6.8.0",
+    "lodash": "^4.17.2",
     "rimraf": "^2.5.4"
+  },
+  "eslintConfig": {
+    "extends": [
+      "suchsoftware"
+    ]
   }
 }

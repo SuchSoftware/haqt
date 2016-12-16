@@ -1,2 +1,5 @@
 node_modules
 npm-debug.log
+
+# Don't check in things that are generated
+lib
